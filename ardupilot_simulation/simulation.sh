@@ -1,0 +1,1 @@
+docker run --rm -it orthuk/ardupilot-sitl ./Tools/autotest/sim_vehicle.py -v ArduPlane --out=udp:host.docker.internal:14550
