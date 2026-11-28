@@ -3,7 +3,7 @@
 CCACHE_DIR=${HOME}/.ccache
 mkdir -p "${CCACHE_DIR}"
 
-podman run -it --rm -w "${SRC_DIR}" \
+docker run -it --rm -w "${SRC_DIR}" \
   --env=CCACHE_DIR="${CCACHE_DIR}" \
   --env=PX4_ASAN \
   --env=PX4_MSAN \

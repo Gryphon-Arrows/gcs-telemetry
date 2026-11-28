@@ -23,7 +23,7 @@ COPY test-requirements.txt /tmp/test-requirements.txt
 COPY ubuntu.sh /tmp/ubuntu.sh
 COPY install-gazebo.sh /tmp/install-gazebo.sh
 
-RUN bash /tmp/ubuntu.sh --no-sim-tools
+RUN bash /tmp/ubuntu.sh
 
 # Install the optional tooling requirements as well, so CI jobs that need them
 # (itcm_check) don't have to reach out to PyPI on every run.
